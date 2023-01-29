@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function C() {
+            let grados = document.getElementById("F").value;
+            document.getElementById("C").innerHTML = (grados-32)*(5/9);
+        }
+    </script>
+</head>
+<body>
+    <h3>Grados</h3>
+    <input type="number" id="F">
+    <button onclick="C()">Click</button>
+    <p id="C"></p>
+</body>
+</html>

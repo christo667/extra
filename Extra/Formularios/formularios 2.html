@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Datos en Formularios </title>
+    <script>
+        function numero(){
+            let dato = document.fdatos.entrada.value
+            document.writeln(`Su 10% es... ${dato*.10} `)
+        }
+    </script>
+</head>
+<body>
+    <form name="fdatos">
+        Escribe numero: <input type="number" size="10" name="entrada"/>
+        <input type="button" value="Pulsa aquí" onclick="numero()" />
+    </form>
+</body>
+</html>

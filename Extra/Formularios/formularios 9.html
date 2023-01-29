@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function Calculo() {
+            let porcentaje = parseInt(document.getElementById("porcentaje").value);
+            let nota = parseInt(document.getElementById("nota").value);
+            let porcentaje2 = parseInt(document.getElementById("porcentaje2").value);
+            let nota2 = parseInt(document.getElementById("nota2").value);
+            let resultado, resultado2;
+            
+            resultado = (nota * porcentaje)/100;
+            resultado2 = (nota2 * porcentaje2)/100;
+            document.getElementById("resultado").innerHTML = `Calificaion ${nota}, con porcentaje ${porcentaje}, da como resultado ${resultado} <br>
+            Calificaion ${nota2}, con porcentaje ${porcentaje2}, da como resultado ${resultado2}`;
+        }
+    </script>
+</head>
+<body>
+    <h3>Calculo de notas</h3>
+    <input type="number" id="porcentaje" placeholder="Porcentaje">
+    <input type="number" id="nota" placeholder="Nota">
+    <br>
+    <input type="number" id="porcentaje2" placeholder="Porcentaje">
+    <input type="number" id="nota2" placeholder="Nota">
+    <br>
+    <button onclick="Calculo()">Calcular</button>
+    <p id="resultado"></p>
+</body>
+</html>

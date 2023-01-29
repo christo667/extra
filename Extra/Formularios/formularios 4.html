@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Datos en Formularios </title>
+    <script>
+        function cuadrado(){
+            let dato = document.fdatos.entrada.value
+            document.writeln(`Su elevacion al cuadrado es... ${Math.pow(dato,2)} `)
+        }
+
+        function cubo(){
+            let cube = document.fdatos.entrada.value
+            document.writeln(`Su elevacion al cubo es... ${Math.pow(cube,3)} `)
+        }
+    </script>
+</head>
+<body>
+    <form name="fdatos">
+        Escribe numero: <input type="number" size="10" name="entrada"/><br>
+        <input type="button" value="cuadrado" onclick="cuadrado()" />
+        <input type="button" value="cubo" onclick="cubo()" />
+    </form>
+</body>
+</html>

@@ -1,0 +1,3 @@
+Del anterior ejercicio: ¿Qué tipo de variable es z? ¿local o global? ¿Donde podemos sacarla por
+pantalla?
+esta es una variable local al usar let para crearla

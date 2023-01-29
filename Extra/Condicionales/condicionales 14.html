@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        let mes, final;
+        mes = prompt("mes?", "0");
+        if (mes <= 5){
+            if (mes%2 != 0) {
+                final = "Tiene 31";
+            } else {
+                final = "Tiene 30";
+            }
+        }else{
+            if (mes%2 != 0) {
+                final = "Tiene 30";
+            } else {
+                final = "Tiene 31";
+            }
+        }
+        
+        document.write(final);
+    </script>
+</head>
+</html>

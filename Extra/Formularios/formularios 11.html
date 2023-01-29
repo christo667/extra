@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function peso() {
+            let altura = parseInt(document.getElementById("altura").value);
+            let edad = parseInt(document.getElementById("edad").value);
+            let sexo = document.getElementById("sexo").value;
+            let peso_a = parseFloat(document.getElementById("Pesoa_ctual").value);
+            let resultado;
+            
+            if(sexo == "M"){
+                resultado = 50 + ((altura-150) / 4) *3 + (edad - 20)/4;
+                document.getElementById("resultado").innerHTML = `Peso Referencia ${resultado}`;
+            }else if(sexo == "F"){
+                resultado = 50 + ((altura-150) / 4) *0.9 + (edad - 20)/4;
+                document.getElementById("resultado").innerHTML = `Peso Referencia ${resultado}`;
+            }else{
+                document.getElementById("resultado").innerHTML = `Invalido el sexo`;
+            }
+
+            
+        }
+    </script>
+</head>
+<body>
+    <h3>Peso</h3>
+    Altura:<br>
+    <input type="number" id="altura" placeholder="cm"><br>
+    Edad:<br>
+    <input type="number" id="edad" placeholder="Años"><br>
+    Sexo:<br>
+    <input type="text" id="sexo" placeholder="M o F"><br>
+    Peso Actual:<br>
+    <input type="number" id="Pesoa_ctual" placeholder="kg">
+    <br>
+    <button onclick="peso()">Calcular</button>
+    <p id="resultado"></p>
+</body>
+</html>
